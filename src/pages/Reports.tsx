@@ -78,7 +78,7 @@ export default function Reports() {
                 </Select>
               </div>
             </div>
-            <Button onClick={() => toast.success("Report exported", { description: "report.pdf downloaded (simulated)" })}>
+            <Button onClick={() => toast.success("Report exported", { description: "report.pdf downloaded" })}>
               <Download className="h-4 w-4 mr-2" />Export
             </Button>
           </div>

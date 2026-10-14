@@ -12,6 +12,14 @@ import Accused from "./pages/Accused";
 import Property from "./pages/Property";
 import Diary from "./pages/Diary";
 import Reports from "./pages/Reports";
+import Communications from "./pages/Communications";
+import SentimentAnalysis from "./pages/SentimentAnalysis";
+import CrimeHotspots from "./pages/CrimeHotspots";
+import PatrolPlanning from "./pages/PatrolPlanning";
+import RepeatPatterns from "./pages/RepeatPatterns";
+import DailyReport from "./pages/DailyReport";
+import RecoveredItems from "./pages/RecoveredItems";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,9 +32,19 @@ const App = () => (
       <StoreProvider>
         <BrowserRouter>
           <Routes>
+            {/* Primary NCIA routes */}
             <Route path="/" element={<Dashboard />} />
-            <Route path="/pcr" element={<PCR />} />
+            <Route path="/communications" element={<Communications />} />
+            <Route path="/sentiment" element={<SentimentAnalysis />} />
+            <Route path="/hotspots" element={<CrimeHotspots />} />
+            <Route path="/patterns" element={<RepeatPatterns />} />
+            <Route path="/patrol" element={<PatrolPlanning />} />
+            <Route path="/daily-report" element={<DailyReport />} />
+            <Route path="/recovered" element={<RecoveredItems />} />
+            <Route path="/settings" element={<Settings />} />
+            {/* Existing legacy routes */}
             <Route path="/fir" element={<FIR />} />
+            <Route path="/pcr" element={<PCR />} />
             <Route path="/efir" element={<EFIR />} />
             <Route path="/accused" element={<Accused />} />
             <Route path="/property" element={<Property />} />

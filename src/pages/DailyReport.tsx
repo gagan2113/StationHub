@@ -115,10 +115,6 @@ export default function DailyReport() {
                     <h2 className="text-lg font-bold">NCIA Daily Intelligence Summary</h2>
                   </div>
                   <div className="text-sm text-muted-foreground">Reporting Date: <strong>{selectedDate}</strong> · Delhi Region · Generated {new Date().toLocaleTimeString()}</div>
-                  <div className="mt-1.5 flex items-center gap-2">
-                    <Badge variant="outline" className="bg-warning/15 text-warning border-warning/30 text-xs">/Badge>
-                    <span className="text-xs text-muted-foreground">Not for operational use</span>
-                  </div>
                 </div>
                 <div className="text-xs text-muted-foreground text-right">
                   <div>Analyst: Insp. Meera Joshi</div>
